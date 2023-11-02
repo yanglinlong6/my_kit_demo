@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "users/pkg/grpc/pb";
+
+
+//The Users service definition.
+service Users {
+ rpc Create (CreateRequest) returns (CreateReply);
+ rpc Hello  (HelloRequest ) returns (HelloReply );
+ rpc Bye    (ByeRequest   ) returns (ByeReply   );
+}
+message CreateRequest {}
+message CreateReply {}
+message HelloRequest {}
+message HelloReply {}
+message ByeRequest {}
+message ByeReply {}
