@@ -2,8 +2,9 @@ package endpoint
 
 import (
 	"context"
-	endpoint "github.com/go-kit/kit/endpoint"
 	service "notificator/pkg/service"
+
+	endpoint "github.com/go-kit/kit/endpoint"
 )
 
 // SendEmailRequest collects the request parameters for the SendEmail method.
@@ -49,4 +50,37 @@ func (e Endpoints) SendEmail(ctx context.Context, email string, content string) 
 		return
 	}
 	return response.(SendEmailResponse).E0
+}
+
+// SendRequest collects the request parameters for the Send method.
+type SendRequest struct {
+	Req     service.SendRequest `json:"req"`
+	Content string              `json:"content"`
+}
+
+// SendResponse collects the response parameters for the Send method.
+type SendResponse struct {
+	S0 service.SendResponse `json:"s0"`
+}
+
+// MakeSendEndpoint returns an endpoint that invokes Send on the service.
+func MakeSendEndpoint(s service.NotificatorService) endpoint.Endpoint {
+	return func(ctx context.Context, request interface{}) (interface{}, error) {
+		req := request.(SendRequest)
+		s0 := s.Send(ctx, req.Req, req.Content)
+		return SendResponse{S0: s0}, nil
+	}
+}
+
+// Send implements Service. Primarily useful in a client.
+func (e Endpoints) Send(ctx context.Context, req service.SendRequest, content string) (s0 service.SendResponse) {
+	request := SendRequest{
+		Content: content,
+		Req:     req,
+	}
+	response, err := e.SendEndpoint(ctx, request)
+	if err != nil {
+		return
+	}
+	return response.(SendResponse).S0
 }

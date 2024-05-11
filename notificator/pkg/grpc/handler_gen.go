@@ -10,9 +10,13 @@ import (
 // NewGRPCServer makes a set of endpoints available as a gRPC AddServer
 type grpcServer struct {
 	sendEmail grpc.Handler
+	send      grpc.Handler
 	pb.UnimplementedNotificatorServer
 }
 
 func NewGRPCServer(endpoints endpoint.Endpoints, options map[string][]grpc.ServerOption) pb.NotificatorServer {
-	return &grpcServer{sendEmail: makeSendEmailHandler(endpoints, options["SendEmail"])}
+	return &grpcServer{
+		send:      makeSendHandler(endpoints, options["Send"]),
+		sendEmail: makeSendEmailHandler(endpoints, options["SendEmail"]),
+	}
 }

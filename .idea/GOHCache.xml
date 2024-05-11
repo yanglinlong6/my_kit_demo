@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="ByeReply">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ByeRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ByeResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateReply">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/bugs/pkg/endpoint/endpoint.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="CreateResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/bugs/pkg/endpoint/endpoint.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Endpoints">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/bugs/pkg/endpoint/endpoint_gen.go" />
+              <option value="file://$PROJECT_DIR$/notificator/pkg/endpoint/endpoint_gen.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint_gen.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="HelloReply">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="HelloRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="HelloResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendEmailReply">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendEmailRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/endpoint/endpoint.go" />
+              <option value="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendEmailResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/endpoint/endpoint.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendRequest">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendRequet">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="SendResponse">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UnimplementedNotificatorServer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator_grpc.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="UnimplementedUsersServer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users_grpc.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="basicBugsService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/bugs/pkg/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="basicNotificatorService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="basicUsersService">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/service/service.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="errorWrapper">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/bugs/pkg/http/handler.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/http/handler.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="grpcServer">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/grpc/handler_gen.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/handler_gen.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="loggingMiddleware">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/bugs/pkg/service/middleware.go" />
+              <option value="file://$PROJECT_DIR$/notificator/pkg/service/middleware.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/service/middleware.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="notificatorClient">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator_grpc.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="usersClient">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users_grpc.pb.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="x">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator.pb.go" />
+              <option value="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/../grpc_demo/grpcdemo.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698904573915" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929198" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/cmd/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698919718129" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/cmd/service/service_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929165" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/endpoint/endpoint.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929087" />
+              <option name="schema">
+                <list>
+                  <option value="CreateRequest" />
+                  <option value="CreateResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/endpoint/endpoint_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929065" />
+              <option name="schema">
+                <list>
+                  <option value="Endpoints" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/endpoint/middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929087" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/http/handler.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929126" />
+              <option name="schema">
+                <list>
+                  <option value="errorWrapper" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/http/handler_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892929137" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/service/middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892928904" />
+              <option name="schema">
+                <list>
+                  <option value="loggingMiddleware" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698932030494" />
+              <option name="schema">
+                <list>
+                  <option value="basicBugsService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/bugs/pkg/utils/grpc_util.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698932078756" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892938698" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/cmd/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698932296326" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/cmd/service/service_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892938586" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/endpoint/endpoint.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892935150" />
+              <option name="schema">
+                <list>
+                  <option value="SendEmailRequest" />
+                  <option value="SendEmailResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/endpoint/endpoint_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892935096" />
+              <option name="schema">
+                <list>
+                  <option value="Endpoints" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/endpoint/middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892935149" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/grpc/handler.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892938372" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/grpc/handler_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892938373" />
+              <option name="schema">
+                <list>
+                  <option value="grpcServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator.pb.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892938337" />
+              <option name="schema">
+                <list>
+                  <option value="SendEmailRequest" />
+                  <option value="SendEmailReply" />
+                  <option value="x" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/grpc/pb/notificator_grpc.pb.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892938338" />
+              <option name="schema">
+                <list>
+                  <option value="notificatorClient" />
+                  <option value="UnimplementedNotificatorServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/service/middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698892935003" />
+              <option name="schema">
+                <list>
+                  <option value="loggingMiddleware" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/notificator/pkg/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698932470809" />
+              <option name="schema">
+                <list>
+                  <option value="SendRequest" />
+                  <option value="SendResponse" />
+                  <option value="basicNotificatorService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698904707483" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/cmd/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698904892424" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/cmd/service/service_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895826580" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895825914" />
+              <option name="schema">
+                <list>
+                  <option value="CreateRequest" />
+                  <option value="CreateResponse" />
+                  <option value="HelloRequest" />
+                  <option value="HelloResponse" />
+                  <option value="ByeRequest" />
+                  <option value="ByeResponse" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/endpoint/endpoint_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895825910" />
+              <option name="schema">
+                <list>
+                  <option value="Endpoints" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/endpoint/middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895825912" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/grpc/handler.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895826556" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/grpc/handler_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895826558" />
+              <option name="schema">
+                <list>
+                  <option value="grpcServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/grpc/pb/users.pb.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895826545" />
+              <option name="schema">
+                <list>
+                  <option value="CreateRequest" />
+                  <option value="CreateReply" />
+                  <option value="HelloRequest" />
+                  <option value="HelloReply" />
+                  <option value="ByeRequest" />
+                  <option value="ByeReply" />
+                  <option value="x" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/grpc/pb/users_grpc.pb.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895826546" />
+              <option name="schema">
+                <list>
+                  <option value="usersClient" />
+                  <option value="UnimplementedUsersServer" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/http/handler.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895301174" />
+              <option name="schema">
+                <list>
+                  <option value="errorWrapper" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/http/handler_gen.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895301176" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/service/middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698895825909" />
+              <option name="schema">
+                <list>
+                  <option value="loggingMiddleware" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/users/pkg/service/service.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1698927568453" />
+              <option name="schema">
+                <list>
+                  <option value="basicUsersService" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="basic_bugs_service" value="basicBugsService" />
+        <entry key="basic_notificator_service" value="basicNotificatorService" />
+        <entry key="basic_users_service" value="basicUsersService" />
+        <entry key="bye_reply" value="ByeReply" />
+        <entry key="bye_request" value="ByeRequest" />
+        <entry key="bye_response" value="ByeResponse" />
+        <entry key="create_reply" value="CreateReply" />
+        <entry key="create_request" value="CreateRequest" />
+        <entry key="create_response" value="CreateResponse" />
+        <entry key="endpoints" value="Endpoints" />
+        <entry key="error_wrapper" value="errorWrapper" />
+        <entry key="grpc_server" value="grpcServer" />
+        <entry key="hello_reply" value="HelloReply" />
+        <entry key="hello_request" value="HelloRequest" />
+        <entry key="hello_response" value="HelloResponse" />
+        <entry key="logging_middleware" value="loggingMiddleware" />
+        <entry key="notificator_client" value="notificatorClient" />
+        <entry key="send_email_reply" value="SendEmailReply" />
+        <entry key="send_email_request" value="SendEmailRequest" />
+        <entry key="send_email_response" value="SendEmailResponse" />
+        <entry key="send_request" value="SendRequest" />
+        <entry key="send_requet" value="SendRequet" />
+        <entry key="send_response" value="SendResponse" />
+        <entry key="unimplemented_notificator_server" value="UnimplementedNotificatorServer" />
+        <entry key="unimplemented_users_server" value="UnimplementedUsersServer" />
+        <entry key="users_client" value="usersClient" />
+        <entry key="x" value="x" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1698892815930" />
+  </component>
+</project>

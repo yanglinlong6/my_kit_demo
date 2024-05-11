@@ -11,14 +11,21 @@ import (
 // single parameter.
 type Endpoints struct {
 	SendEmailEndpoint endpoint.Endpoint
+	SendEndpoint      endpoint.Endpoint
 }
 
 // New returns a Endpoints struct that wraps the provided service, and wires in all of the
 // expected endpoint middlewares
 func New(s service.NotificatorService, mdw map[string][]endpoint.Middleware) Endpoints {
-	eps := Endpoints{SendEmailEndpoint: MakeSendEmailEndpoint(s)}
+	eps := Endpoints{
+		SendEmailEndpoint: MakeSendEmailEndpoint(s),
+		SendEndpoint:      MakeSendEndpoint(s),
+	}
 	for _, m := range mdw["SendEmail"] {
 		eps.SendEmailEndpoint = m(eps.SendEmailEndpoint)
+	}
+	for _, m := range mdw["Send"] {
+		eps.SendEndpoint = m(eps.SendEndpoint)
 	}
 	return eps
 }

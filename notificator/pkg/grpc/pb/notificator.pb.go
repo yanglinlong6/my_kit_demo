@@ -20,6 +20,166 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
+// FindByEmailRequest 通过Email获取用户信息
+type FindByEmailRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Email string `protobuf:"bytes,1,opt,name=email,proto3" json:"email,omitempty"`
+}
+
+func (x *FindByEmailRequest) Reset() {
+	*x = FindByEmailRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[0]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *FindByEmailRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FindByEmailRequest) ProtoMessage() {}
+
+func (x *FindByEmailRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[0]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FindByEmailRequest.ProtoReflect.Descriptor instead.
+func (*FindByEmailRequest) Descriptor() ([]byte, []int) {
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{0}
+}
+
+func (x *FindByEmailRequest) GetEmail() string {
+	if x != nil {
+		return x.Email
+	}
+	return ""
+}
+
+// FindByIDRequest 方法请求结构体
+type FindByIDRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Id int32 `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
+}
+
+func (x *FindByIDRequest) Reset() {
+	*x = FindByIDRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[1]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *FindByIDRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*FindByIDRequest) ProtoMessage() {}
+
+func (x *FindByIDRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[1]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use FindByIDRequest.ProtoReflect.Descriptor instead.
+func (*FindByIDRequest) Descriptor() ([]byte, []int) {
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{1}
+}
+
+func (x *FindByIDRequest) GetId() int32 {
+	if x != nil {
+		return x.Id
+	}
+	return 0
+}
+
+// UserResponse 方法返回结构体
+type UserResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Id       int32  `protobuf:"varint,1,opt,name=id,proto3" json:"id,omitempty"`
+	Username string `protobuf:"bytes,2,opt,name=username,proto3" json:"username,omitempty"`
+	Email    string `protobuf:"bytes,3,opt,name=email,proto3" json:"email,omitempty"`
+}
+
+func (x *UserResponse) Reset() {
+	*x = UserResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[2]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *UserResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*UserResponse) ProtoMessage() {}
+
+func (x *UserResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[2]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use UserResponse.ProtoReflect.Descriptor instead.
+func (*UserResponse) Descriptor() ([]byte, []int) {
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{2}
+}
+
+func (x *UserResponse) GetId() int32 {
+	if x != nil {
+		return x.Id
+	}
+	return 0
+}
+
+func (x *UserResponse) GetUsername() string {
+	if x != nil {
+		return x.Username
+	}
+	return ""
+}
+
+func (x *UserResponse) GetEmail() string {
+	if x != nil {
+		return x.Email
+	}
+	return ""
+}
+
 type SendEmailRequest struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -29,7 +189,7 @@ type SendEmailRequest struct {
 func (x *SendEmailRequest) Reset() {
 	*x = SendEmailRequest{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[0]
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[3]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -42,7 +202,7 @@ func (x *SendEmailRequest) String() string {
 func (*SendEmailRequest) ProtoMessage() {}
 
 func (x *SendEmailRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[0]
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[3]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -55,7 +215,7 @@ func (x *SendEmailRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendEmailRequest.ProtoReflect.Descriptor instead.
 func (*SendEmailRequest) Descriptor() ([]byte, []int) {
-	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{0}
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{3}
 }
 
 type SendEmailReply struct {
@@ -67,7 +227,7 @@ type SendEmailReply struct {
 func (x *SendEmailReply) Reset() {
 	*x = SendEmailReply{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[1]
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[4]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -80,7 +240,7 @@ func (x *SendEmailReply) String() string {
 func (*SendEmailReply) ProtoMessage() {}
 
 func (x *SendEmailReply) ProtoReflect() protoreflect.Message {
-	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[1]
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[4]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -93,7 +253,83 @@ func (x *SendEmailReply) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SendEmailReply.ProtoReflect.Descriptor instead.
 func (*SendEmailReply) Descriptor() ([]byte, []int) {
-	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{1}
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{4}
+}
+
+type SendRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *SendRequest) Reset() {
+	*x = SendRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[5]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SendRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SendRequest) ProtoMessage() {}
+
+func (x *SendRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[5]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SendRequest.ProtoReflect.Descriptor instead.
+func (*SendRequest) Descriptor() ([]byte, []int) {
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{5}
+}
+
+type SendReply struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *SendReply) Reset() {
+	*x = SendReply{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *SendReply) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*SendReply) ProtoMessage() {}
+
+func (x *SendReply) ProtoReflect() protoreflect.Message {
+	mi := &file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use SendReply.ProtoReflect.Descriptor instead.
+func (*SendReply) Descriptor() ([]byte, []int) {
+	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP(), []int{6}
 }
 
 var File_notificator_pkg_grpc_pb_notificator_proto protoreflect.FileDescriptor
@@ -102,15 +338,36 @@ var file_notificator_pkg_grpc_pb_notificator_proto_rawDesc = []byte{
 	0x0a, 0x29, 0x6e, 0x6f, 0x74, 0x69, 0x66, 0x69, 0x63, 0x61, 0x74, 0x6f, 0x72, 0x2f, 0x70, 0x6b,
 	0x67, 0x2f, 0x67, 0x72, 0x70, 0x63, 0x2f, 0x70, 0x62, 0x2f, 0x6e, 0x6f, 0x74, 0x69, 0x66, 0x69,
 	0x63, 0x61, 0x74, 0x6f, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x02, 0x70, 0x62, 0x22,
-	0x12, 0x0a, 0x10, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c, 0x52, 0x65, 0x71, 0x75,
-	0x65, 0x73, 0x74, 0x22, 0x10, 0x0a, 0x0e, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c,
-	0x52, 0x65, 0x70, 0x6c, 0x79, 0x32, 0x44, 0x0a, 0x0b, 0x4e, 0x6f, 0x74, 0x69, 0x66, 0x69, 0x63,
-	0x61, 0x74, 0x6f, 0x72, 0x12, 0x35, 0x0a, 0x09, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69,
-	0x6c, 0x12, 0x14, 0x2e, 0x70, 0x62, 0x2e, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c,
-	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e, 0x70, 0x62, 0x2e, 0x53, 0x65, 0x6e,
-	0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x42, 0x19, 0x5a, 0x17, 0x6e,
-	0x6f, 0x74, 0x69, 0x66, 0x69, 0x63, 0x61, 0x74, 0x6f, 0x72, 0x2f, 0x70, 0x6b, 0x67, 0x2f, 0x67,
-	0x72, 0x70, 0x63, 0x2f, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x2a, 0x0a, 0x12, 0x46, 0x69, 0x6e, 0x64, 0x42, 0x79, 0x45, 0x6d, 0x61, 0x69, 0x6c, 0x52, 0x65,
+	0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x14, 0x0a, 0x05, 0x65, 0x6d, 0x61, 0x69, 0x6c, 0x18, 0x01,
+	0x20, 0x01, 0x28, 0x09, 0x52, 0x05, 0x65, 0x6d, 0x61, 0x69, 0x6c, 0x22, 0x21, 0x0a, 0x0f, 0x46,
+	0x69, 0x6e, 0x64, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x0e,
+	0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x02, 0x69, 0x64, 0x22, 0x50,
+	0x0a, 0x0c, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x0e,
+	0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28, 0x05, 0x52, 0x02, 0x69, 0x64, 0x12, 0x1a,
+	0x0a, 0x08, 0x75, 0x73, 0x65, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x18, 0x02, 0x20, 0x01, 0x28, 0x09,
+	0x52, 0x08, 0x75, 0x73, 0x65, 0x72, 0x6e, 0x61, 0x6d, 0x65, 0x12, 0x14, 0x0a, 0x05, 0x65, 0x6d,
+	0x61, 0x69, 0x6c, 0x18, 0x03, 0x20, 0x01, 0x28, 0x09, 0x52, 0x05, 0x65, 0x6d, 0x61, 0x69, 0x6c,
+	0x22, 0x12, 0x0a, 0x10, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c, 0x52, 0x65, 0x71,
+	0x75, 0x65, 0x73, 0x74, 0x22, 0x10, 0x0a, 0x0e, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69,
+	0x6c, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x22, 0x0d, 0x0a, 0x0b, 0x53, 0x65, 0x6e, 0x64, 0x52, 0x65,
+	0x71, 0x75, 0x65, 0x73, 0x74, 0x22, 0x0b, 0x0a, 0x09, 0x53, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x70,
+	0x6c, 0x79, 0x32, 0xd8, 0x01, 0x0a, 0x0b, 0x4e, 0x6f, 0x74, 0x69, 0x66, 0x69, 0x63, 0x61, 0x74,
+	0x6f, 0x72, 0x12, 0x35, 0x0a, 0x09, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c, 0x12,
+	0x14, 0x2e, 0x70, 0x62, 0x2e, 0x53, 0x65, 0x6e, 0x64, 0x45, 0x6d, 0x61, 0x69, 0x6c, 0x52, 0x65,
+	0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e, 0x70, 0x62, 0x2e, 0x53, 0x65, 0x6e, 0x64, 0x45,
+	0x6d, 0x61, 0x69, 0x6c, 0x52, 0x65, 0x70, 0x6c, 0x79, 0x12, 0x26, 0x0a, 0x04, 0x53, 0x65, 0x6e,
+	0x64, 0x12, 0x0f, 0x2e, 0x70, 0x62, 0x2e, 0x53, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x73, 0x74, 0x1a, 0x0d, 0x2e, 0x70, 0x62, 0x2e, 0x53, 0x65, 0x6e, 0x64, 0x52, 0x65, 0x70, 0x6c,
+	0x79, 0x12, 0x37, 0x0a, 0x0b, 0x46, 0x69, 0x6e, 0x64, 0x42, 0x79, 0x45, 0x6d, 0x61, 0x69, 0x6c,
+	0x12, 0x16, 0x2e, 0x70, 0x62, 0x2e, 0x46, 0x69, 0x6e, 0x64, 0x42, 0x79, 0x45, 0x6d, 0x61, 0x69,
+	0x6c, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x10, 0x2e, 0x70, 0x62, 0x2e, 0x55, 0x73,
+	0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x31, 0x0a, 0x08, 0x46, 0x69,
+	0x6e, 0x64, 0x42, 0x79, 0x49, 0x64, 0x12, 0x13, 0x2e, 0x70, 0x62, 0x2e, 0x46, 0x69, 0x6e, 0x64,
+	0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x10, 0x2e, 0x70, 0x62,
+	0x2e, 0x55, 0x73, 0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x42, 0x19, 0x5a,
+	0x17, 0x6e, 0x6f, 0x74, 0x69, 0x66, 0x69, 0x63, 0x61, 0x74, 0x6f, 0x72, 0x2f, 0x70, 0x6b, 0x67,
+	0x2f, 0x67, 0x72, 0x70, 0x63, 0x2f, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -125,16 +382,27 @@ func file_notificator_pkg_grpc_pb_notificator_proto_rawDescGZIP() []byte {
 	return file_notificator_pkg_grpc_pb_notificator_proto_rawDescData
 }
 
-var file_notificator_pkg_grpc_pb_notificator_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_notificator_pkg_grpc_pb_notificator_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_notificator_pkg_grpc_pb_notificator_proto_goTypes = []interface{}{
-	(*SendEmailRequest)(nil), // 0: pb.SendEmailRequest
-	(*SendEmailReply)(nil),   // 1: pb.SendEmailReply
+	(*FindByEmailRequest)(nil), // 0: pb.FindByEmailRequest
+	(*FindByIDRequest)(nil),    // 1: pb.FindByIDRequest
+	(*UserResponse)(nil),       // 2: pb.UserResponse
+	(*SendEmailRequest)(nil),   // 3: pb.SendEmailRequest
+	(*SendEmailReply)(nil),     // 4: pb.SendEmailReply
+	(*SendRequest)(nil),        // 5: pb.SendRequest
+	(*SendReply)(nil),          // 6: pb.SendReply
 }
 var file_notificator_pkg_grpc_pb_notificator_proto_depIdxs = []int32{
-	0, // 0: pb.Notificator.SendEmail:input_type -> pb.SendEmailRequest
-	1, // 1: pb.Notificator.SendEmail:output_type -> pb.SendEmailReply
-	1, // [1:2] is the sub-list for method output_type
-	0, // [0:1] is the sub-list for method input_type
+	3, // 0: pb.Notificator.SendEmail:input_type -> pb.SendEmailRequest
+	5, // 1: pb.Notificator.Send:input_type -> pb.SendRequest
+	0, // 2: pb.Notificator.FindByEmail:input_type -> pb.FindByEmailRequest
+	1, // 3: pb.Notificator.FindById:input_type -> pb.FindByIDRequest
+	4, // 4: pb.Notificator.SendEmail:output_type -> pb.SendEmailReply
+	6, // 5: pb.Notificator.Send:output_type -> pb.SendReply
+	2, // 6: pb.Notificator.FindByEmail:output_type -> pb.UserResponse
+	2, // 7: pb.Notificator.FindById:output_type -> pb.UserResponse
+	4, // [4:8] is the sub-list for method output_type
+	0, // [0:4] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
 	0, // [0:0] is the sub-list for extension extendee
 	0, // [0:0] is the sub-list for field type_name
@@ -147,7 +415,7 @@ func file_notificator_pkg_grpc_pb_notificator_proto_init() {
 	}
 	if !protoimpl.UnsafeEnabled {
 		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*SendEmailRequest); i {
+			switch v := v.(*FindByEmailRequest); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -159,7 +427,67 @@ func file_notificator_pkg_grpc_pb_notificator_proto_init() {
 			}
 		}
 		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[1].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*FindByIDRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[2].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*UserResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[3].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SendEmailRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[4].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*SendEmailReply); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[5].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SendRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_notificator_pkg_grpc_pb_notificator_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*SendReply); i {
 			case 0:
 				return &v.state
 			case 1:
@@ -177,7 +505,7 @@ func file_notificator_pkg_grpc_pb_notificator_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_notificator_pkg_grpc_pb_notificator_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   2,
+			NumMessages:   7,
 			NumExtensions: 0,
 			NumServices:   1,
 		},

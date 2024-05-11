@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"fmt"
 )
 
 // UsersService describes the service.
@@ -36,6 +37,8 @@ func New(middleware []Middleware) UsersService {
 
 func (b *basicUsersService) Hello(ctx context.Context, name string) (s0 string) {
 	// TODO implement the business logic of Hello
+	name = name + "ceshi"
+	fmt.Println("name===" + name)
 	return name + "Hello resp"
 }
 func (b *basicUsersService) Bye(ctx context.Context, name string) (s0 string) {

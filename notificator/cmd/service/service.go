@@ -4,6 +4,16 @@ import (
 	"context"
 	"flag"
 	"fmt"
+	"net"
+	http1 "net/http"
+	endpoint "notificator/pkg/endpoint"
+	grpc "notificator/pkg/grpc"
+	pb "notificator/pkg/grpc/pb"
+	service "notificator/pkg/service"
+	"os"
+	"os/signal"
+	"syscall"
+
 	endpoint1 "github.com/go-kit/kit/endpoint"
 	log "github.com/go-kit/kit/log"
 	prometheus "github.com/go-kit/kit/metrics/prometheus"
@@ -16,17 +26,8 @@ import (
 	prometheus1 "github.com/prometheus/client_golang/prometheus"
 	promhttp "github.com/prometheus/client_golang/prometheus/promhttp"
 	grpc1 "google.golang.org/grpc"
-	"net"
-	http1 "net/http"
-	endpoint "notificator/pkg/endpoint"
-	grpc "notificator/pkg/grpc"
-	pb "notificator/pkg/grpc/pb"
-	service "notificator/pkg/service"
-	"os"
-	"os/signal"
 	appdash "sourcegraph.com/sourcegraph/appdash"
 	opentracing "sourcegraph.com/sourcegraph/appdash/opentracing"
-	"syscall"
 )
 
 var tracer opentracinggo.Tracer
@@ -37,7 +38,7 @@ var logger log.Logger
 var fs = flag.NewFlagSet("notificator", flag.ExitOnError)
 var debugAddr = fs.String("debug-addr", ":8080", "Debug and metrics listen address")
 var httpAddr = fs.String("http-addr", ":8081", "HTTP listen address")
-var grpcAddr = fs.String("grpc-addr", ":8082", "gRPC listen address")
+var grpcAddr = fs.String("grpc-addr", ":8087", "gRPC listen address")
 var thriftAddr = fs.String("thrift-addr", ":8083", "Thrift listen address")
 var thriftProtocol = fs.String("thrift-protocol", "binary", "binary, compact, json, simplejson")
 var thriftBuffer = fs.Int("thrift-buffer", 0, "0 for unbuffered")

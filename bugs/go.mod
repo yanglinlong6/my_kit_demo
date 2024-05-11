@@ -2,6 +2,14 @@ module bugs
 
 go 1.20
 
+require users v0.0.0
+
+replace users => ../users
+
+require notificator v0.0.0
+
+replace notificator => ../notificator
+
 require (
 	github.com/go-kit/kit v0.13.0
 	github.com/lightstep/lightstep-tracer-go v0.26.0
@@ -10,6 +18,7 @@ require (
 	github.com/openzipkin-contrib/zipkin-go-opentracing v0.5.0
 	github.com/openzipkin/zipkin-go v0.4.2
 	github.com/prometheus/client_golang v1.17.0
+	go.uber.org/zap v1.19.1
 	sourcegraph.com/sourcegraph/appdash v0.0.0-20211028080628-e2786a622600
 )
 
@@ -28,6 +37,8 @@ require (
 	github.com/prometheus/client_model v0.4.1-0.20230718164431-9a2bf3000d16 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.11.1 // indirect
+	go.uber.org/atomic v1.9.0 // indirect
+	go.uber.org/multierr v1.7.0 // indirect
 	golang.org/x/net v0.12.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
